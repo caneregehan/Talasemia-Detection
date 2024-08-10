@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yolo Uygulaması</title>
+    <style>
+        table {
+            margin: 0 auto;
+            border: 5px solid #223E92;
+            border-radius: 10px;
+            width: 100%; /* Tablo genişliği */
+            max-width: auto; /* Maksimum genişlik */
+        }
+        th {
+            background-color: #223E92;
+            color: #CB9A34;
+            font-size: 24px;
+            font-family: Arial;
+            padding: 10px;
+        }
+        td {
+            text-align: center;
+            padding: 10px;
+        }
+        .input-header {
+            color: #d61c38;
+            font-size: 24px;
+        }
+        .output-header {
+            color: #ebdb52;
+            font-size: 24px;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%; /* Maksimum yükseklik */
+            border-radius: 10px;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5; /* Sayfa arka plan rengi */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2">SONUÇLAR</th>
+        </tr>
+        <tr>
+            <td class="input-header"><b>İnput İmgesi</b></td>
+            <td class="output-header"><b>Output İmgesi</b></td>
+        </tr>
+        <tr>
+            <td>
+                <img src="{{ orjinal_image }}" alt="Input Image">
+            </td>
+            <td>
+                <img src="{{ process_image }}" alt="Output Image">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

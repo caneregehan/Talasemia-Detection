@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yolo Uygulaması</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #223E92; /* Arka plan rengi */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100vh;
+        }
+        h2 {
+            color: #CB9A34; /* Başlık rengi */
+            margin-bottom: 20px;
+        }
+        input[type="file"] {
+            margin: 10px 0;
+            padding: 10px;
+            border: 2px solid #CB9A34; /* Input kenarlık rengi */
+            border-radius: 5px;
+            background-color: #fff;
+            color: #223E92; /* Input yazı rengi */
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #CB9A34; /* Buton arka plan rengi */
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #9F6D0F; /* Buton hover arka plan rengi */
+        }
+        .logo {
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Resim Yükle</h2>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <br>
+        <input type="submit" value="Resmi Yükle">
+    </form>
+    <div class="logo">
+        <img src="static/yeni-logo.jpg" alt="Yolo Logo" style="max-width: 600px; max-height: 600px;">
+    </div>
+</body>
+</html>
